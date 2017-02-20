@@ -1,0 +1,66 @@
+@import "_partial/_base";
+@import "_partial/archive";
+@import "_partial/footer";
+@import "_partial/header";
+@import "_partial/main";
+@import "_partial/post";
+
+html {
+  font-size: 62.5%;
+  font-family: 
+    -apple-system,
+    "Helvetica Neue",
+    "Arial",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "STHeiti",
+    "Microsoft YaHei",
+    "Microsoft JhengHei",
+    "Source Han Sans SC",
+    "Noto Sans CJK SC",
+    "Source Han Sans CN",
+    "Noto Sans SC",
+    "Source Han Sans TC",
+    "Noto Sans CJK TC",
+    "WenQuanYi Micro Hei",
+    SimSun,
+    sans-serif;
+}
+
+body {
+  font-size: $normal-font-size;
+}
+
+@media (min-width: 769px) {
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 92%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+p {
+  line-height: $normal-line-height;
+  color: $black-deep;
+}
+
+a {
+  word-break: break-word;
+}
+
+img {
+  width: 100%;
+}
+
+/* FIXME */
+pre {
+
+}
+
+}
