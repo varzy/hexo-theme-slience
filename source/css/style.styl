@@ -3,6 +3,7 @@
 @import "_partial/archive";
 @import "_partial/footer";
 @import "_partial/header";
+@import "_partial/index.styl";
 @import "_partial/main";
 @import "_partial/post";
 
@@ -37,9 +38,20 @@ p {
 
 // FIXME
 
-a {
+a:link {
   word-break: break-word;
   text-decoration: none;
+  color: $green-sea;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $green-sea;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: $black-ink;
 }
 
 // end FIXME
