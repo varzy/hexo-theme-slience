@@ -1,3 +1,91 @@
-div {
-  position: absolute;
+@import "common.styl";
+@import "_partial/_base";
+@import "_partial/archive";
+@import "_partial/footer";
+@import "_partial/header";
+@import "_partial/index.styl";
+@import "_partial/main";
+@import "_partial/post";
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
+
+body {
+  font-size: $normal-font-size;
+}
+
+@media (min-width: 769px) {
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 92%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+p {
+  line-height: $normal-line-height;
+  color: $black-deep;
+}
+
+// FIXME
+a:link {
+  word-break: break-word;
+  text-decoration: none;
+  color: $green-sea;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $green-sea;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $black-ink;
+}
+
+// end FIXME
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+code {
+  padding: 0.2rem 0.6rem;
+  background-color: $grey;
+}
+
+figure {
+  overflow: auto;
+}
+
+ FIXME
+blockquote {
+  border-left: 2px solid $black-ink;
+  margin-left: 1rem;
+  padding-left: 2rem;
+}
+
+strong {}
+
+// end FIXME
