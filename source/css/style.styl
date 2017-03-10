@@ -80,16 +80,27 @@ code {
   background-color: $grey;
 }
 
+// FIXME
+
 figure {
   overflow: auto;
+  font-size: $quote-font-size;
+  line-height: $quote-line-height;
 }
+
+figure .gutter pre {
+  background-color: rgba(196, 196, 196, 0.24);
+  padding: 0.8rem 1.2rem;
+}
+
+// end FIXME
 
 // FIXME
 
 blockquote {
   border-left: 2px solid $black-ink;
-  margin-left: 1rem;
-  padding-left: 2rem;
+  margin-left: 1.8rem;
+  padding-left: 1.2rem;
 }
 
 strong {}
