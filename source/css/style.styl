@@ -6,13 +6,16 @@
 @import "_partial/index.styl";
 @import "_partial/main";
 @import "_partial/post";
+
 html {
   font-size: 62.5%;
   font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
 body {
-  font-size: $normal-font-size;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  word-spacing: $word-spacing;
 }
 
 @media (min-width: 769px) {
@@ -31,8 +34,8 @@ body {
 }
 
 p {
-  line-height: $normal-line-height;
-  color: $black;
+  line-height: $line-height;
+  color: $black-font;
 }
 
 // FIXME
@@ -40,12 +43,12 @@ p {
 a:link {
   word-break: break-word;
   text-decoration: none;
-  color: $blue-deep;
+  color: $blue;
 }
 
 a:visited {
   text-decoration: none;
-  color: $blue-deep;
+  color: $blue;
 }
 
 a:hover {
