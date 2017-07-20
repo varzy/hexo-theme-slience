@@ -2,27 +2,21 @@
 // Color
 // ===================
 
+$tomato-red: #b7472a !default;
+
 $bg-color: #f5f5f5 !default;
 $ink: #222 !default;
 $link: #222 !default;
-$link-active: #b7472a !default;
-//$white = #fff;
-//$black = #000;
-//$black-font = #222;
-//$orange = #fd5621;
-//$grey = #9d9d9d;
-//$blue-light = #bfefff;
-//$blue-deep = #262a30;
-//$black-light = #363f46;
-//$green-sea = #16a085;
-//$blue = #3e50b4;
+$link-active: $tomato-red !default;
+$code-line-bg: #e5e5e5 !default;
+$code-area-bg: #fbfbfb !default;
 
 // ===================
 // Size
 // ===================
 
 $base-font-size: 1.6rem !default;
-
+$code-font-size: 1.4rem !default;
 $container-max-width: 76.9rem !default;
 
 $break-point: 42rem !default;
@@ -30,17 +24,13 @@ $break-point: 42rem !default;
 $page-logo: 4.2rem !default;
 
 $img-max-width: 100% !default;
-//$line-height = 2.2rem;
-//$letter-spacing = 0rem;
-//// Wranning: This setting is only affect for Eng fonts
-//$word-spacing = 0rem;
-//
-//$bigger-font-size = 1.6rem;
-//
-//$big-font-size = 1.8rem;
-//$big-line-height = 2.4rem;
-//
-//$giant-font-size = 3.2rem;
-//
-//$quote-font-size = 1.6rem;
-//$quote-line-height = 1.8rem;
+
+$title-font-weight: 200 !default;
+
+$post-h1: 2.8rem !default;
+$post-h2: 2.4rem !default;
+$post-h3: 2rem !default;
+$post-h4: 1.6rem !default;
+$post-h5: 1.4rem !default;
+$post-h6: 1.2rem !default;
+
