@@ -25,9 +25,11 @@ $base-font-size: 1.6rem !default;
 
 $container-max-width: 76.9rem !default;
 
-$break-point: 42rem;
+$break-point: 42rem !default;
 
 $page-logo: 4.2rem !default;
+
+$img-max-width: 100% !default;
 //$line-height = 2.2rem;
 //$letter-spacing = 0rem;
 //// Wranning: This setting is only affect for Eng fonts

@@ -1,28 +1,26 @@
+@media screen and (min-width: $break-point) {
+  .container {
+    padding-top: 3.2rem !important;
+    justify-content: space-between;
+    .page-logo {
+      font-size: $page-logo;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point) {
+  .container {
+    padding-top: 2rem !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .page-logo {
+      font-size: $page-logo - .6rem;
+    }
+  }
+}
+
 header {
-  @media screen and (min-width: $break-point) {
-    .container {
-      padding-top: 3.2rem !important;
-      padding-bottom: 6.4rem !important;
-      justify-content: space-between;
-      .page-logo {
-        font-size: $page-logo;
-      }
-    }
-  }
-
-  @media screen and (max-width: $break-point) {
-    .container {
-      padding-top: 2rem !important;
-      padding-bottom: 3.2rem !important;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      .page-logo {
-        font-size: $page-logo - .6rem;
-      }
-    }
-  }
-
   .container {
     display: flex;
 

@@ -1,9 +1,51 @@
-.main{
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  //min-height: 60vh;
-  .container{
+@media screen and (min-width: $break-point) {
+  .main .container {
+    //padding: 3.2rem 0 !important;
 
+    section.posts {
+      box-sizing: border-box;
+      //padding: 0 6.4rem;
+
+      .post {
+        .post-meta {
+          //box-sizing: border-box;
+          display: inline-block;
+          vertical-align: middle;
+          width: 20%;
+        }
+        .post-title {
+          //box-sizing: border-box;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: left;
+          width: 79%;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $break-point) {
+  .main .container {
+    padding: 2rem 1.8rem !important;
+    .post-meta {
+      padding-bottom: .4rem;
+    }
+  }
+
+}
+
+.main .container {
+  section.posts {
+    .post {
+      padding: .8rem 0;
+      .post-meta {
+        min-width: 16%;
+      }
+      .post-title {
+        word-break: normal;
+      }
+    }
   }
 }

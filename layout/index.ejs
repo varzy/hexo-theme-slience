@@ -1,15 +1,25 @@
 <section class="posts">
     <% page.posts.each(function (post) { %>
-    <article class="post">
-        <div class="post-title">
-            <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
-        </div>
-        <div class="post-content">
-            <%- post.content %>
-        </div>
+
+    <div class="post">
         <div class="post-meta">
             <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
         </div>
-    </article>
+
+        <div class="post-title">
+            <a class="post-title-link"
+               href="<%- url_for(post.path) %>">
+                <%= post.title %>
+            </a>
+        </div>
+
+        <!--<% post.tags.each(function (tag) { %>-->
+        <!--<%= tag.name %>-->
+        <!--<% }) %>-->
+
+    </div>
+
     <% }) %>
 </section>
+
+<%- partial('_partial/paginator') %>
