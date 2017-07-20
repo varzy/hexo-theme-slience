@@ -1,0 +1,17 @@
+section.categories {
+  text-align: center;
+  .category-list {
+    text-align: left;
+    
+    li {
+      list-style: none;
+      .category-list-link {
+        display: inline-block;
+        min-width: 30%;
+      }
+      .category-list-count {
+
+      }
+    }
+  }
+}

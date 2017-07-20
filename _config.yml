@@ -1,10 +1,8 @@
 menu:
   Home: /
-#  Archives: /archives
   Categories: /categories
   Tags: /tags
   About: /about
-#  Github: https://github.com/varzy
 
 theme_color: '#f5f5f5'
 

@@ -4,8 +4,11 @@
 
     section.posts {
       box-sizing: border-box;
+      width: 80%;
+      margin: 0 auto;
 
       .post {
+        font-family: 'Lora', sans-serif;
         padding: 1.1rem 0;
         .post-meta {
           display: inline-block;
@@ -99,10 +102,9 @@
         font-size: $post-h1 + .4rem;
       }
     }
-    .post-content {
-      font-family: 'Crimson Text', serif !important;
+    .post-content * {
+      font-family: 'Martel', 'Lora', 'Slabo 27px', sans-serif !important;
     }
   }
 
 }
-

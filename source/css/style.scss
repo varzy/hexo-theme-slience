@@ -1,4 +1,5 @@
 // pre include
+@import url('https://fonts.css.network/css?family=Bellefair|Lora|Roboto|Slabo+27px|Martel');
 @import "_lib/normalize";
 @import "_partial/variables";
 @import "_partial/preset";
@@ -8,3 +9,5 @@
 @import "_partial/main";
 @import "_partial/footer";
 @import "_partial/paginator";
+@import "_partial/categories";
+@import "_partial/tags";
