@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= config.language %>>">
 
 <%- partial('_partial/head') %>
 
-  <body>
+<body>
 
-    <%- partial('_partial/header') %>
+<%- partial('_partial/header') %>
 
-      <main class="main wrap">
-        <%- body %>
-      </main>
+<%- partial('_partial/main') %>
 
-      <%- partial('_partial/footer')  %>
+<%- partial('_partial/footer') %>
 
-  </body>
+</body>
 
 </html>

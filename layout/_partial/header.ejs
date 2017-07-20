@@ -1,22 +1,27 @@
 <header>
-  <div class="wrap">
+    <div class="container">
 
-    <div class="blog-title">
-      <a href="<%- url_for() %>" class="logo">
-        <%= config.title %>
-      </a>
+        <!-- page-title-area -->
+        <div>
+            <h1 class="page-logo">
+                <a href="<%- url_for() %>">
+                    <%= config.title %>
+                </a>
+            </h1>
+        </div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <% for (name in theme.menu) { %>
+                <li class="menu-item">
+                    <a href="<%- url_for(theme.menu[name]) %>"
+                       class="menu-item-link">
+                        <%- __(name) %>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </nav>
+
     </div>
-
-    <nav class="navbar">
-      <ul class="menu">
-        <% for (name in theme.menu) { %>
-          <li class="menu-item">
-            <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link">
-              <%- __('Menu.' + name) %>
-            </a>
-          </li>
-          <% } %>
-      </ul>
-    </nav>
-  </div>
 </header>

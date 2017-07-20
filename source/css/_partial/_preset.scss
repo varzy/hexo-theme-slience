@@ -1,0 +1,33 @@
+@import url('https://fonts.css.network/css?family=Bellefair|Merriweather');
+
+html {
+  font-size: 62.5%;
+  font-family: 'Bellefair', 'Merriweather', serif;
+  body {
+    font-size: $base-font-size;
+    background-color: $bg-color;
+
+    //ul {
+    //  margin: 0;
+    //  padding: 0;
+    //  li {
+    //    list-style: none;
+    //  }
+    //}
+
+    a:link, a:visited {
+      text-decoration: none;
+      color: $link;
+    }
+    a:hover {
+      color: $link-active;
+    }
+
+    .container {
+      max-width: $container-max-width;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+  }
+}
