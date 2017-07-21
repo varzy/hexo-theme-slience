@@ -24,7 +24,7 @@
       }
     }
 
-    article.post-main {
+    article.post-body {
       h1 {
         font-size: $post-h1 + .2rem !important;
       }
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: $break-point) {
   .main .container {
-    padding: 2rem 1.8rem !important;
+    //padding: 2rem 1.8rem !important;
     .post {
       padding: 1.4rem 0;
       .post-meta {
@@ -58,7 +58,7 @@
       }
     }
 
-    article.post-main {
+    article.post-body {
       h1 {
         font-size: $post-h1 - .2rem !important;
       }
@@ -94,7 +94,7 @@
     }
   }
 
-  article.post-main {
+  article.post-body {
     .post-title {
       padding-bottom: 1.4rem;
       text-align: center;

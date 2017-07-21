@@ -7,7 +7,7 @@ html {
     background-color: $bg-color;
     position: relative;
     margin: 0;
-    padding: 0;
+    padding: 0 2rem;
     color: $ink;
     a:link,
     a:visited {
@@ -23,7 +23,7 @@ html {
       line-height: 1.6;
       margin: 0;
     }
-    ul li {
+    ol li, ul li {
       line-height: 1.6;
     }
     h1,
@@ -42,7 +42,8 @@ html {
     }
     .container {
       max-width: $container-max-width;
-      margin: 0 auto; //padding: 0 2rem;
+      margin: 0 auto;
+      //padding: 0 2rem;
     }
     figure {
       margin-left: 0;
@@ -67,7 +68,8 @@ html {
       margin-right: 0;
       border-left: $tomato-red 2px solid;
       p {
-        padding: .3rem 2rem;
+        padding: .4rem 2rem;
+        line-height: 1.6;
       }
     }
     .page-wrapper {
