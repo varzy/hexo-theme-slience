@@ -1,7 +1,9 @@
 Menu:
-  Home: 首页
-  Archives: 归档
-  Github: 交友
+  Home: Home
+  Archives: Archives
+  Github: Github
+  Categories: Categories
+  Tags: Tags
 Paginator:
-  Prev: 上一页
-  Next: 下一页
+  Prev: Prev
+  Next: Next

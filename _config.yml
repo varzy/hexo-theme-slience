@@ -6,13 +6,6 @@ menu:
 
 theme_color: '#f5f5f5'
 
-favicon: 'favicon.png'
+favicon_name: 'favicon.png'
 
 google_site_verification: c66gcm0iMw487a2YC6w7cFbrhhe_Mh_vVNC6Pt3Dak8
-
-#highlight:
-#  enable: true
-#  line_number: true
-#  auto_detect: true
-#  tab_replace: false
-highlight_theme: rainbow
