@@ -1,11 +1,14 @@
-menu:
-  Home: /
-  Categories: /categories
-  Tags: /tags
-  About: /about
+menus:
+  home: /
+  categories: /categories
+  tags: /tags
+  about: /about
 
-theme_color: '#f5f5f5'
+# chrome toolbar color for android chrome
+theme_color: f5f5f5
 
-favicon_name: 'favicon.png'
+# site's favicon
+favicon: favicon.png
 
+# google site verification code's content
 google_site_verification: c66gcm0iMw487a2YC6w7cFbrhhe_Mh_vVNC6Pt3Dak8

@@ -1,10 +1,12 @@
 <% if (page.total > 1){ %>
 <nav class="page-nav">
     <div class="wrapper">
+
         <%- paginator({
-            prev_text: "&laquo;" + __('Paginator.Prev'),
-            next_text: __('Paginator.Next') + "&raquo;"
+            prev_text: '< ' + __('paginator.prev'),
+            next_text: __('paginator.next') + ' >'
         }) %>
+
     </div>
 </nav>
 <% } %>

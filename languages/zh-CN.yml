@@ -1,9 +1,12 @@
-Menu:
+category: Category
+tag: Tag
+
+menus:
   Home: Home
   Archives: Archives
   Github: Github
   Categories: Categories
-  Tags: Tags
+  tags: tags
 Paginator:
   Prev: Prev
   Next: Next

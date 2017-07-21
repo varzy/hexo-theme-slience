@@ -1,9 +1,14 @@
-Menu:
-  Home: Home
-  Archives: Archives
-  Github: Github
-  Categories: Categories
-  Tags: Tags
-Paginator:
-  Prev: Prev
-  Next: Next
+# menus
+home: Home
+categories: Categories
+tags: Tags
+about: About
+
+# title
+title:
+  category: Category
+  tag: Tag
+
+paginator:
+  prev: Newer
+  next: Older
