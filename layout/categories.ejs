@@ -1,10 +1,13 @@
 <section class="categories">
-    <h1>Categories</h1>
 
-    <%- list_categories({
-        show_count: false,
-        separator: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-        style: false
-    }) %>
+    <h1 class="categories-title">Categories</h1>
+
+    <div class="categories-content">
+        <%- list_categories({
+            show_count: false,
+            separator: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+            style: false
+        }) %>
+    </div>
 
 </section>

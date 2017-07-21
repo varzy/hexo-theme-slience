@@ -1,36 +1,36 @@
 @media screen and (min-width: $break-point) {
-  .container {
+  .wrapper {
     padding-top: 3.2rem !important;
     justify-content: space-between;
-    .page-logo {
+    &-logo {
       font-size: $page-logo;
     }
   }
 }
 
 @media screen and (max-width: $break-point) {
-  .container {
+  .wrapper {
     padding-top: 3.6rem !important;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    .page-logo {
+    &-logo {
       font-size: $page-logo - .6rem;
     }
   }
 }
 
 header {
-  .container {
+  & .wrapper {
     display: flex;
 
-    .page-logo {
+    &-logo {
       margin: 0;
       padding: 0;
       font-weight: 300;
     }
 
-    nav.navbar ul {
+    &-navbar ul {
       padding: 0;
       text-align: center;
       li {

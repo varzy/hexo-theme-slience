@@ -1,24 +1,29 @@
-<article class="post-body">
+<article class="post_body">
 
-    <div class="post-title">
-        <h1 class="title">
+    <div class="post_body-title">
+        <h1 class="post_body-title-content">
             <%= page.title %>
         </h1>
-        <div class="post-meta-inner">
-            <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+
+        <div class="post_body-title-meta">
+            <span class="post_body-title-meta-time">
+                <%- date(page.date, "YYYY-MM-DD") %>
+            </span>
         </div>
     </div>
 
-    <div class="post-content">
-        <!-- https://hexo.io/docs/helpers.html#toc -->
-        <%
-        /*
-            toc(page.content, {
-                list_number: false
-            })
-        */
-        %>
+    <div class="post_body-content">
+
+        <% /**
+         * judge whether add toc part
+         */ %>
+        <% if(theme.post_toc) { %>
+        <%- toc(page.content, {
+            list_number: false
+        }) %>
+        <% } %>
 
         <%- page.content %>
     </div>
+
 </article>
