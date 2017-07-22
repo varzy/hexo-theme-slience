@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="<%= config.language %>">
+<html lang="<%= config.language %>>">
 
-<% /* load head part */ %>
 <%- partial('_partial/head') %>
 
 <body>
 
-<% /* set a total wrapper, make it push footer to the bottom by css */ %>
 <div class="body-wrapper">
-    <% /* load header part */ %>
     <%- partial('_partial/header') %>
 
-    <% /* load main part */ %>
     <%- partial('_partial/main') %>
 </div>
 
-<% /* load footer */ %>
 <%- partial('_partial/footer') %>
 
 </body>

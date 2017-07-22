@@ -26,37 +26,20 @@
         <%- page.content %>
     </div>
 
-    <% /* ! TODO: fix here */ %>
-
     <% /**
      * show categories
      */ %>
     <% if (theme.is_show_categories) { %>
-    <div class="categories">
-        <% Object.keys(page.categories).forEach(function (category) { %>
-        <a href="<%- url_for(category.path) %>">
-            <% console.log(category) %>
-            <%= category.name %>
-        </a>
-        <% }) %>
-    </div>
+    <% /* ! TODO: fix categories */ %>
     <% } %>
 
     <% /**
      * show tags
      */ %>
     <% if (theme.is_show_tags) { %>
-    <div class="tags">
-        <% page.tags.forEach(function (tag) { %>
-        <a href="<%- url_for(tag.path) %>">
-            <%= tag.name %>
-        </a>
-        <% }) %>
-    </div>
+    <% /* ! TODO: fix tags */ %>
     <% } %>
-
-    <%- partial('_partial/prev_next') %>
 
 </article>
 
-
+<%- partial('_partial/prev_next') %>

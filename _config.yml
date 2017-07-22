@@ -17,5 +17,4 @@ post_toc: false
 
 is_show_categories: true
 
-is_show_tags: false
-
+is_show_tags: true

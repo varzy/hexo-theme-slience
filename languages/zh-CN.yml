@@ -1,12 +1,7 @@
-category: Category
-tag: Tag
-
-menus:
-  Home: Home
-  Archives: Archives
-  Github: Github
-  Categories: Categories
-  tags: tags
+Menu:
+  Home: 首页
+  Archives: 归档
+  Github: 交友
 Paginator:
-  Prev: Prev
-  Next: Next
+  Prev: 上一页
+  Next: 下一页
