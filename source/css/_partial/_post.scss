@@ -1,8 +1,123 @@
+@media screen and (min-width: $width-break-point) {
+  .title {
+    text-align: center;
+
+    &-inner {
+      font-size: $size-regular + 1rem;
+    }
+  }
+
+  .content {
+    h1 {
+      font-size: $size-regular + .8rem;
+    }
+    h2 {
+      font-size: $size-regular + .6rem;
+    }
+    h3 {
+      font-size: $size-regular + .4rem;
+    }
+    h4 {
+      font-size: $size-regular + .2rem;
+    }
+    h5 {
+      font-size: $size-regular + .1rem;
+    }
+    h6 {
+      font-size: $size-regular;
+    }
+  }
+}
+
+@media screen and (max-width: $width-break-point) {
+  .title {
+    text-align: left;
+
+    &-inner {
+      font-size: $size-regular + .8rem;
+    }
+  }
+
+  .content {
+    h1 {
+      font-size: $size-regular + .6rem;
+    }
+    h2 {
+      font-size: $size-regular + .4rem;
+    }
+    h3 {
+      font-size: $size-regular + .3rem;
+    }
+    h4 {
+      font-size: $size-regular + .2rem;
+    }
+    h5 {
+      font-size: $size-regular + .1rem;
+    }
+    h6 {
+      font-size: $size-regular;
+    }
+  }
+
+}
+
 .post-body {
   ul, ol {
+    padding-left: 3.2rem;
     li {
       list-style: disc;
       line-height: 1.6;
     }
   }
+
+  .title {
+    &-meta {
+      color: $meta;
+    }
+  }
+
+  .content {
+    padding-top: 2.4rem;
+
+    h2:before {
+      content: '# ';
+      color: $color-tomato-red;
+    }
+
+    h3:before {
+      content: '## ';
+      color: $color-tomato-red;
+    }
+
+    h4:before {
+      content: '### ';
+      color: $color-tomato-red;
+    }
+
+    h5:before {
+      content: '#### ';
+      color: $color-tomato-red;
+    }
+
+    h6:before {
+      content: '##### ';
+      color: $color-tomato-red;
+    }
+  }
+
+  .categories {
+
+  }
+
+  .tags {
+    &-item {
+      color: $meta;
+      &:before {
+        content: '# ';
+        color: $color-tomato-red;
+      }
+
+    }
+  }
+
 }

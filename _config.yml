@@ -14,3 +14,8 @@ favicon: favicon.png
 google_site_verification: c66gcm0iMw487a2YC6w7cFbrhhe_Mh_vVNC6Pt3Dak8
 
 post_toc: false
+
+is_show_categories: true
+
+is_show_tags: false
+

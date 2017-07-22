@@ -10,8 +10,7 @@ html {
     position: relative;
     margin: 0;
     padding: 0;
-    //color: $color-black;
-    color: #333;
+    color: $ink;
 
     /**
      * tags
@@ -55,19 +54,19 @@ html {
     }
 
     h1 {
-      font-size: $size-regular * 2;
+      font-size: $size-regular + 1.2rem;
     }
 
     h2 {
-      font-size: $size-regular * 2 - .4rem;
+      font-size: $size-regular + .8rem;
     }
 
     h3 {
-      font-size: $size-regular * 2 - .8rem;
+      font-size: $size-regular + .6rem;
     }
 
     h4 {
-      font-size: $size-regular  + .4rem;
+      font-size: $size-regular + .4rem;
     }
 
     h5 {
