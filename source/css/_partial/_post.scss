@@ -1,3 +1,8 @@
 .post-body {
-
+  ul, ol {
+    li {
+      list-style: disc;
+      line-height: 1.6;
+    }
+  }
 }

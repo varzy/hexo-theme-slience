@@ -1,9 +1,9 @@
 <div class="index">
-    <section class="posts">
+    <ul class="posts">
 
         <% page.posts.each(function (post) { %>
 
-        <div class="posts-item">
+        <li class="posts-item">
             <div class="posts-item-meta">
             <span class="posts-item-meta-time">
                 <%- date(post.date, "YYYY-MM-DD") %>
@@ -17,10 +17,10 @@
                 </a>
             </div>
 
-        </div>
+        </li>
 
         <% }) %>
-    </section>
+    </ul>
 
     <% /* include paginator */ %>
     <%- partial('_partial/paginator') %>

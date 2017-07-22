@@ -1,7 +1,62 @@
+@media screen and (min-width: $width-break-point) {
+  .index {
+    .posts {
+      &-item {
+        display: flex;
+        align-items: baseline;
+        list-style: none;
+        &-meta {
+          flex: 4;
+          text-align: center;
+          font-size: $size-regular;
+        }
+
+        &-title {
+          flex: 8;
+          font-size: $size-large;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $width-break-point) {
+  .index {
+
+    .posts {
+      &-item {
+        //flex-flow: row wrap;
+        //justify-content: flex-start;
+        //align-items: flex-start;
+
+        &-meta {
+          text-align: left;
+          //padding-right: 3rem;
+        }
+
+        &-title {
+          font-size: $size-large;
+        }
+      }
+    }
+  }
+}
+
 .index {
   .posts {
+    margin: 0;
+    padding: 0;
     &-item {
+      padding: .8rem 0;
+      &-meta {
+        letter-spacing: .2rem;
+        //color: #bbbbbb;
+        color: #828282;
+      }
 
+      &-title {
+        letter-spacing: .1rem;
+      }
     }
   }
 }

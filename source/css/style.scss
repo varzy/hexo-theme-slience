@@ -1,15 +1,30 @@
-// vendor
-@import url('https://fonts.css.network/css?family=Bellefair|Lora|Roboto|Slabo+27px|Martel');
+/**
+ * Vendor
+ */
+
+// google fonts
+@import url('https://fonts.css.network/css?family=Bellefair|Inconsolata|Lora|Roboto|Slabo+27px|Martel');
+
+// normalize.css <https://necolas.github.io/normalize.css/>
 @import "_lib/normalize";
 
-// pre-include
+
+/**
+ * Pre load
+ */
+
 @import "_partial/variables";
+
 @import "_partial/preset";
 
-// partial
+
+/**
+ * Partial
+ */
+
 @import "_partial/header";
 @import "_partial/main";
 @import "_partial/footer";
 //@import "_partial/paginator";
 //@import "_partial/categories";
-//@import "_partial/tags";
+@import "_partial/tags";

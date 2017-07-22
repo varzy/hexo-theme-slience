@@ -1,9 +1,40 @@
+@media screen and (min-width: $width-break-point) {
+  header {
+    .container {
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar {
+        &-menus {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $width-break-point) {
+  header {
+    .container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .navbar {
+        &-menus {
+          margin: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
 header {
+  font-family: 'Bellefair', serif;
+  padding-top: 5rem;
+
   .container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 
     .logo {
       margin: 0;
@@ -12,8 +43,7 @@ header {
     }
 
     .navbar {
-      margin: 0;
-      padding: 0;
+      font-size: $size-large-x;
 
       &-menus {
         padding: 0;
@@ -23,7 +53,6 @@ header {
           display: inline-block;
           padding: 0 .8rem;
           list-style: none;
-          font-size: $size-large;
         }
       }
     }

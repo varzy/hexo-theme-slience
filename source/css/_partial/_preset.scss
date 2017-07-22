@@ -1,7 +1,8 @@
 html {
   font-size: 62.5%;
   // !! TODO: fix default font-familt
-  font-family: 'Bellefair', serif;
+  //font-family: 'Bellefair', serif;
+  font-family: 'Inconsolata', 'Microsoft YaHei', 'SimSun', monospace, Serif;
 
   body {
     font-size: $size-regular;
@@ -9,13 +10,15 @@ html {
     position: relative;
     margin: 0;
     padding: 0;
-    color: $color-black;
+    //color: $color-black;
+    color: #333;
 
     /**
      * tags
      */
     div, span, a, p, em, img, li, h1, h2, h3, h4, h5, h6 {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      word-break: normal;
     }
 
     a {
@@ -23,7 +26,8 @@ html {
       word-break: break-all;
 
       &:link, &:visited {
-        color: $color-black;
+        //color: $color-black;
+        color: #444;
       }
 
       &:hover {
@@ -35,17 +39,43 @@ html {
     p {
       margin: 0;
       padding: .8rem 0;
-      line-height: 1.6;
-      letter-spacing: .1rem;
+      line-height: 2.4rem;
     }
 
     // !! TODO: fix line-height
-    ol li, ul li {
-      line-height: 1.6;
+    ul, ol {
+      li {
+        list-style: none;
+        line-height: 1.6;
+      }
     }
 
     h1, h2, h3, h4, h5, h6 {
       font-weight: 200;
+    }
+
+    h1 {
+      font-size: $size-regular * 2;
+    }
+
+    h2 {
+      font-size: $size-regular * 2 - .4rem;
+    }
+
+    h3 {
+      font-size: $size-regular * 2 - .8rem;
+    }
+
+    h4 {
+      font-size: $size-regular  + .4rem;
+    }
+
+    h5 {
+      font-size: $size-regular + .2rem;
+    }
+
+    h6 {
+      font-size: $size-regular;
     }
 
     img {
@@ -69,7 +99,7 @@ html {
       padding-left: 1.6rem;
       max-width: 100%;
       overflow: auto;
-      background-color: $color-gray-light;
+      background-color: $color-white;
       font-size: $size-small !important;
       line-height: 1.6;
 
@@ -80,8 +110,9 @@ html {
 
     code {
       font-size: $size-small;
-      background: $color-white;
-      padding: 0 0.3em
+      line-height: $size-regular;
+      background: $color-gray-deep;
+      padding: 0.1rem 0.6rem;
     }
 
     blockquote {
@@ -90,7 +121,8 @@ html {
       border-left: $color-tomato-red 2px solid;
 
       p {
-        padding: .4rem 2rem;
+        margin: 0;
+        padding: .6rem 2rem;
         line-height: 1.6;
       }
     }
@@ -120,6 +152,17 @@ html {
       &-center {
         text-align: center;
       }
+    }
+
+    .full-screen {
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    .all-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
   }

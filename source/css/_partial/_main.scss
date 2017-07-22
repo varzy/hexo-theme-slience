@@ -1,117 +1,21 @@
+@media screen and (min-width: $width-break-point) {
+  .main {
+    .container {
+      padding-top: 4.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: $width-break-point) {
+  .main {
+    .container {
+      padding-top: 2.4rem;
+    }
+  }
+}
+
 .main {
   @import "index";
 
   @import "post";
 }
-
-//@media screen and (min-width: $break-point) {
-//  .main .container {
-//    //padding: 3.2rem 0 !important;
-//
-//    section.posts {
-//      box-sizing: border-box;
-//      width: 80%;
-//      margin: 0 auto;
-//
-//      .post {
-//        font-size: $base-font-size + .2rem;
-//        font-family: 'Lora', sans-serif;
-//        padding: 1.1rem 0;
-//        .post-meta {
-//          display: inline-block;
-//          vertical-align: middle;
-//          width: 20%;
-//        }
-//        .post-title {
-//          display: inline-block;
-//          vertical-align: middle;
-//          text-align: left;
-//          width: 79%;
-//        }
-//      }
-//    }
-//
-//    article.post-body {
-//      h1 {
-//        font-size: $post-h1 + .2rem !important;
-//      }
-//      h2 {
-//        font-size: $post-h2 + .2rem !important;
-//      }
-//      h3 {
-//        font-size: $post-h3 + .2rem !important;
-//      }
-//      h4 {
-//        font-size: $post-h4 + .2rem !important;
-//      }
-//      h5 {
-//        font-size: $post-h5 + .2rem !important;
-//      }
-//      h6 {
-//        font-size: $post-h6 + .2rem !important;
-//      }
-//    }
-//
-//  }
-//}
-//
-//@media screen and (max-width: $break-point) {
-//  .main .container {
-//    //padding: 2rem 1.8rem !important;
-//    .post {
-//      padding: 1.4rem 0;
-//      .post-meta {
-//        padding-bottom: .4rem;
-//      }
-//    }
-//
-//    article.post-body {
-//      h1 {
-//        font-size: $post-h1 - .2rem !important;
-//      }
-//      h2 {
-//        font-size: $post-h2 - .2rem !important;
-//      }
-//      h3 {
-//        font-size: $post-h3 - .2rem !important;
-//      }
-//      h4 {
-//        font-size: $post-h4 - .2rem !important;
-//      }
-//      h5 {
-//        font-size: $post-h5 - .2rem !important;
-//      }
-//      h6 {
-//        font-size: $post-h6 - .2rem !important;
-//      }
-//    }
-//  }
-//
-//}
-//
-//.main .container {
-//  section.posts {
-//    .post {
-//      .post-meta {
-//        min-width: 16%;
-//      }
-//      .post-title {
-//        word-break: normal;
-//      }
-//    }
-//  }
-//
-//  article.post-body {
-//    .post-title {
-//      padding-bottom: 1.4rem;
-//      text-align: center;
-//      .title {
-//        font-size: $post-h1 + .4rem;
-//      }
-//    }
-//    .post-content * {
-//      font-family: 'Martel', 'Lora', 'Slabo 27px', sans-serif !important;
-//    }
-//  }
-//
-//}
