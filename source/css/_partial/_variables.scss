@@ -1,29 +1,57 @@
-// ===================
+// ============================
 // Color
-// ===================
+// ============================
 
-$tomato-red: #b7472a !default;
-$bg-color: #f5f5f5 !default;
-$ink: #222 !default;
-$link: #222 !default;
-$link-active: $tomato-red !default;
-$code-line-bg: #e5e5e5 !default;
-$code-area-bg: #fbfbfb !default;
+// main color
+$color-white: #fafafa !default;
+$color-black: #222 !default;
+$color-gray: #f5f5f5 !default;
 
-// ===================
-// Size
-// ===================
+// vice color
+$color-gray-light: #f5f5f5 !default;
+$color-gray-deep: #e5e5e5 !default;
 
-$base-font-size: 1.4rem !default;
-$code-font-size: 1.2rem !default;
-$container-max-width: 76.9rem !default;
-$break-point: 42rem !default;
-$page-logo: 4.2rem !default;
-$img-max-width: 100% !default;
-$title-font-weight: 200 !default;
-$post-h1: 2.8rem !default;
-$post-h2: 2.4rem !default;
-$post-h3: 2rem !default;
-$post-h4: 1.6rem !default;
-$post-h5: 1.4rem !default;
-$post-h6: 1.2rem !default;
+// decorative colors
+$color-tomato-red: #b7472a !default;
+
+// ============================
+// Font Size
+// ============================
+
+$size-regular: 1.4rem !default;
+$size-small: $size-regular - .2rem !default;
+$size-small-x: $size-regular - .4rem !default;
+$size-small-xx: $size-regular - .6rem !default;
+$size-large: $size-regular + .2rem !default;
+$size-large-x: $size-regular + .4rem !default;
+$size-large-xx: $size-regular + .6rem !default;
+
+// ============================
+// width, height
+// ============================
+
+$width-max-container: 66rem;
+$width-max-img: 100%;
+$width-break-point: 46rem;
+
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+
+//$color-light-white: #fbfbfb !default;
+//$color-pure-black: #000 !default;
+//$color-light-black: #3c3f41 !default;
+//$color-light-gray: #f5f5f5 !default;
+//$color-deep-gray: #e5e5e5 !default;
+//
+//$color-deep-dark: #222 !default;
+//$color-light-dark: #3c3f41 !default;
+//$color-tomato-red: #b7472a !default;
+//
+//$tomato-red: #b7472a !default;
+//$bg-color: #f5f5f5 !default;
+//$ink: #222 !default;
+//$link: #222 !default;
+//$link-active: $tomato-red !default;
+//$code-line-bg: #e5e5e5 !default;
+//$code-area-bg: #fbfbfb !default;

@@ -1,91 +1,126 @@
 html {
   font-size: 62.5%;
+  // !! TODO: fix default font-familt
   font-family: 'Bellefair', serif;
 
   body {
-    font-size: $base-font-size;
-    background-color: $bg-color;
+    font-size: $size-regular;
+    background-color: $color-gray-light;
     position: relative;
     margin: 0;
-    padding: 0 2rem;
-    color: $ink;
-    p,
-    a,
-    li,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    padding: 0;
+    color: $color-black;
+
+    /**
+     * tags
+     */
+    div, span, a, p, em, img, li, h1, h2, h3, h4, h5, h6 {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-    a:link,
-    a:visited {
-      word-break: break-all;
+
+    a {
       text-decoration: none;
-      color: $link;
+      word-break: break-all;
+
+      &:link, &:visited {
+        color: $color-black;
+      }
+
+      &:hover {
+        color: $color-tomato-red;
+      }
     }
-    a:hover {
-      color: $link-active;
-    }
+
+    // !! TODO: fix style
     p {
+      margin: 0;
       padding: .8rem 0;
       line-height: 1.6;
-      margin: 0;
       letter-spacing: .1rem;
     }
+
+    // !! TODO: fix line-height
     ol li, ul li {
       line-height: 1.6;
     }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-weight: $title-font-weight;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 200;
     }
+
     img {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      max-width: $img-max-width;
+      max-width: $width-max-img;
     }
-    .container {
-      max-width: $container-max-width;
-      margin: 0 auto;
-      //padding: 0 2rem;
+
+    hr {
+      border: none;
+      border-bottom: .2rem solid $color-gray-deep;
     }
+
+    /**
+     * hexo tags
+     */
     figure {
       margin-left: 0;
       margin-right: 0;
       padding-left: 1.6rem;
       max-width: 100%;
       overflow: auto;
-      background-color: $code-area-bg;
-      font-size: $code-font-size !important;
+      background-color: $color-gray-light;
+      font-size: $size-small !important;
       line-height: 1.6;
+
       .code {
         padding-left: .8rem;
       }
     }
+
     code {
-      font-size: $code-font-size;
-      background: $code-line-bg;
+      font-size: $size-small;
+      background: $color-white;
       padding: 0 0.3em
     }
+
     blockquote {
       margin-left: 0;
       margin-right: 0;
-      border-left: $tomato-red 2px solid;
+      border-left: $color-tomato-red 2px solid;
+
       p {
         padding: .4rem 2rem;
         line-height: 1.6;
       }
     }
-    .page-wrapper {
+
+    /**
+     * customized class
+     */
+    .container {
+      box-sizing: border-box;
+      max-width: $width-max-container;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    .body-wrapper {
+      // ! TODO: fix the height
       min-height: calc(100vh - 10.2rem);
     }
+
+    .text {
+      &-left {
+        text-align: left;
+      }
+      &-right {
+        text-align: right;
+      }
+      &-center {
+        text-align: center;
+      }
+    }
+
   }
 }

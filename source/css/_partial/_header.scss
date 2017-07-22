@@ -1,44 +1,94 @@
-@media screen and (min-width: $break-point) {
-  .wrapper {
-    padding-top: 3.2rem !important;
-    justify-content: space-between;
-    &-logo {
-      font-size: $page-logo;
-    }
-  }
-}
-
-@media screen and (max-width: $break-point) {
-  .wrapper {
-    padding-top: 3.6rem !important;
+header {
+  .container {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    &-logo {
-      font-size: $page-logo - .6rem;
-    }
-  }
-}
 
-header {
-  & .wrapper {
-    display: flex;
-
-    &-logo {
+    .logo {
       margin: 0;
       padding: 0;
       font-weight: 300;
     }
 
-    &-navbar ul {
+    .navbar {
+      margin: 0;
       padding: 0;
-      text-align: center;
-      li {
-        display: inline-block;
-        padding: 0 .8rem;
-        list-style: none;
-        font-size: $base-font-size + .4rem;
+
+      &-menus {
+        padding: 0;
+        text-align: center;
+
+        &-item {
+          display: inline-block;
+          padding: 0 .8rem;
+          list-style: none;
+          font-size: $size-large;
+        }
       }
     }
   }
 }
+
+//@media screen and (min-width: $width-break-point) {
+//  header {
+//    .container {
+//      justify-content: space-between;
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: $width-break-point) {
+//  header {
+//    .container {
+//      flex-direction: column;
+//      justify-content: space-between;
+//      align-items: center;
+//    }
+//
+//  }
+//}
+
+//@media screen and (min-width: $width-break-point) {
+//  header {
+//    padding-top: 3.2rem !important;
+//    justify-content: space-between;
+//    .&-logo {
+//      font-size: $size-large-xx;
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: $width-break-point) {
+//  header {
+//    padding-top: 3.6rem !important;
+//    flex-direction: column;
+//    justify-content: space-between;
+//    align-items: center;
+//    .&-logo {
+//      font-size: $size-large-x;
+//    }
+//  }
+//}
+//
+//header {
+//  & .container {
+//    display: flex;
+//  }
+//  .&-logo {
+//    margin: 0;
+//    padding: 0;
+//    font-weight: 300;
+//  }
+//
+//  .&-navbar ul {
+//    padding: 0;
+//    text-align: center;
+//    li {
+//      display: inline-block;
+//      padding: 0 .8rem;
+//      list-style: none;
+//      font-size: $size-large;
+//    }
+//  }
+//}

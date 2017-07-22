@@ -1,25 +1,28 @@
-<section class="post_index">
+<div class="index">
+    <section class="posts">
 
-    <% page.posts.each(function (post) { %>
+        <% page.posts.each(function (post) { %>
 
-    <div class="post_index-item">
-        <div class="post_index-item-meta">
-            <span class="post_index-item-meta-time">
+        <div class="posts-item">
+            <div class="posts-item-meta">
+            <span class="posts-item-meta-time">
                 <%- date(post.date, "YYYY-MM-DD") %>
             </span>
+            </div>
+
+            <div class="posts-item-title">
+                <a class="posts-item-title-link"
+                   href="<%- url_for(post.path) %>">
+                    <%= post.title %>
+                </a>
+            </div>
+
         </div>
 
-        <div class="post_index-item-title">
-            <a class="post_index-item-title-link"
-               href="<%- url_for(post.path) %>">
-                <%= post.title %>
-            </a>
-        </div>
+        <% }) %>
+    </section>
 
-    </div>
+    <% /* include paginator */ %>
+    <%- partial('_partial/paginator') %>
 
-    <% }) %>
-</section>
-
-<% /* include paginator */ %>
-<%- partial('_partial/paginator') %>
+</div>

@@ -3,7 +3,7 @@
 
         <% /* page title logo */ %>
         <div>
-            <h1 class="header-logo">
+            <h1 class="logo">
                 <a href="<%- url_for() %>">
                     <%= config.title %>
                 </a>
@@ -11,10 +11,10 @@
         </div>
 
         <% /* page title menu */ %>
-        <nav class="header-navbar">
-            <ul class="header-navbar-menus">
+        <nav class="navbar">
+            <ul class="navbar-menus">
                 <% for (menu in theme.menus) { %>
-                <li class="header-navbar-menus-item">
+                <li class="navbar-menus-item">
                     <a href="<%- url_for(theme.menus[menu]) %>">
                         <% /* read configs from lang.yml */ %>
                         <%= __(menu) %>
