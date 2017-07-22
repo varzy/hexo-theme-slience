@@ -25,6 +25,8 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      // for less-width phone
+      padding: 0 .6rem;
 
       .navbar {
         font-size: $size-large;

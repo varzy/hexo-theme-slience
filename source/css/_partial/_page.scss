@@ -1,0 +1,11 @@
+.page {
+  .title {
+    padding-left: 2rem;
+    border-left: 2px solid $color-tomato-red;
+    color: $meta;
+  }
+
+  .content{
+    font-size: $size-large;
+  }
+}

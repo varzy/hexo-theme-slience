@@ -1,14 +1,12 @@
-# menus
 home: Home
+
 categories: Categories
+category: Category
+
 tags: Tags
+tag: Tag
+
 about: About
 
-# title
-title:
-  category: Category
-  tag: Tag
-
-paginator:
-  prev: Newer
-  next: Older
+prev: < Newer
+next: Older >

@@ -1,7 +1,12 @@
-Menu:
-  Home: Home
-  Archives: Archives
-  Github: Github
-Paginator:
-  Prev: Prev
-  Next: Next
+home: Home
+
+categories: Categories
+category: Category
+
+tags: Tags
+tag: Tag
+
+about: About
+
+prev: < Newer
+next: Older >

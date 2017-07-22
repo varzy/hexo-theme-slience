@@ -1,7 +1,18 @@
-section.tags {
+.tags {
+  .title {
+    padding-left: 2rem;
+    border-left: 2px solid $color-tomato-red;
+    color: $meta;
+  }
+
   a {
     word-break: keep-all;
-    padding: 0 .8rem;
     white-space: nowrap;
+    padding: 0 .8rem;
   }
+
+  .content {
+    text-align: center;
+  }
+
 }

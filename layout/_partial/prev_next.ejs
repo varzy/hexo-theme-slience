@@ -8,7 +8,7 @@
         <% if(page.prev) { %>
         <div class="prev">
             <a href="<%- url_for(page.prev.path) %>">
-                <span>< </span><%- __('paginator.prev') %>
+                <%- __('prev') %>
             </a>
         </div>
         <% } else { %>
@@ -22,7 +22,7 @@
         <% if(page.next) { %>
         <div class="next">
             <a href="<%- url_for(page.next.path) %>">
-                <%- __('paginator.next') %><span> ></span>
+                <%- __('next') %>
             </a>
         </div>
         <% } else { %>

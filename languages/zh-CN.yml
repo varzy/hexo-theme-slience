@@ -1,7 +1,12 @@
-Menu:
-  Home: 首页
-  Archives: 归档
-  Github: 交友
-Paginator:
-  Prev: 上一页
-  Next: 下一页
+home: 首页
+
+categories: 分类
+category: 类别
+
+tags: 标签
+tag: 标签
+
+about: 关于
+
+prev: < 上一篇
+next: 下一篇 >
