@@ -1,23 +1,33 @@
 <div class="prev-next">
-    <% /**
-     * prev page
-     */ %>
-    <% if(page.prev) { %>
-    <div class="prev">
-        <a href="<%- url_for(page.prev.path) %>">
-            <%- __('paginator.prev') %>
-        </a>
-    </div>
-    <% } %>
+    <div class="wrapper">
 
-    <% /**
-     * next page
-     */ %>
-    <% if(page.next) { %>
-    <div class="next">
-        <a href="<%- url_for(page.next.path) %>">
-            <%- __('paginator.next') %>
-        </a>
+        <% /**
+         * prev page
+         * if you are in the first post, don't show newer
+         */ %>
+        <% if(page.prev) { %>
+        <div class="prev">
+            <a href="<%- url_for(page.prev.path) %>">
+                <span>< </span><%- __('paginator.prev') %>
+            </a>
+        </div>
+        <% } else { %>
+        <div class="prev"></div>
+        <% } %>
+
+        <% /**
+         * next page
+         * if you are in the last post, don't show older
+         */ %>
+        <% if(page.next) { %>
+        <div class="next">
+            <a href="<%- url_for(page.next.path) %>">
+                <%- __('paginator.next') %><span> ></span>
+            </a>
+        </div>
+        <% } else { %>
+        <div class="next"></div>
+        <% } %>
+
     </div>
-    <% } %>
 </div>

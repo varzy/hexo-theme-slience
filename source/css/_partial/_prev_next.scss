@@ -1,0 +1,24 @@
+@media screen and (min-width: $width-break-point) {
+  .prev-next {
+    padding-top: 5.6rem;
+  }
+}
+
+@media screen and (max-width: $width-break-point) {
+  .prev-next {
+    padding-top: 4.2rem;
+  }
+}
+
+.prev-next {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: $size-large-x;
+
+    a:link, a:visited {
+      color: $meta;
+    }
+  }
+
+}

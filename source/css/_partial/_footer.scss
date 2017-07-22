@@ -1,5 +1,14 @@
+// all-height = 10rem
 footer {
-  padding-top: 2rem;
-  height: 8.2rem;
-  font-size: $size-large;
+  max-height: 12rem;
+  padding-top: 4rem;
+
+  .container {
+    height: 8rem;
+    display: table;
+    p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 }

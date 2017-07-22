@@ -1,10 +1,36 @@
-nav.page-nav {
-  padding-top: 2rem;
-  .wrapper {
-    text-align: center;
+@media screen and (min-width: $width-break-point) {
+  .paginator {
     a, span {
-      padding: 0 1rem;
+      padding: 0 1.6rem;
     }
+
+    .wrapper {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $width-break-point) {
+  .paginator {
+    .wrapper {
+      max-width: $width-break-point / 3 * 2;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.paginator {
+  padding-top: 4rem;
+  //font-size: $size-large;
+
+  a:link, a:visited {
+    color: $meta;
+  }
+
+  .wrapper {
+
   }
 
 }

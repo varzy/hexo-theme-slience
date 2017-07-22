@@ -129,16 +129,27 @@ html {
     /**
      * customized class
      */
+    @media screen and (min-width: $width-break-point) {
+      .container {
+        padding: 0 3rem;
+      }
+    }
+
+    @media screen and (max-width: $width-break-point) {
+      .container {
+        padding: 0 2rem;
+      }
+    }
+
     .container {
       box-sizing: border-box;
       max-width: $width-max-container;
       margin: 0 auto;
-      padding: 0 3rem;
     }
 
     .body-wrapper {
-      // ! TODO: fix the height
-      min-height: calc(100vh - 10.2rem);
+      // 10rem is footer's height
+      min-height: calc(100vh - 12rem);
     }
 
     .text {

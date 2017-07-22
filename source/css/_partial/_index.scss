@@ -13,7 +13,7 @@
 
         &-title {
           flex: 8;
-          font-size: $size-large;
+          //font-size: $size-large;
         }
       }
     }
@@ -25,13 +25,8 @@
 
     .posts {
       &-item {
-        //flex-flow: row wrap;
-        //justify-content: flex-start;
-        //align-items: flex-start;
-
         &-meta {
           text-align: left;
-          //padding-right: 3rem;
         }
 
         &-title {
@@ -51,7 +46,7 @@
       &-meta {
         letter-spacing: .2rem;
         //color: #bbbbbb;
-        color: #828282;
+        color: $meta;
       }
 
       &-title {

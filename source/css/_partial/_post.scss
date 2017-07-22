@@ -1,64 +1,77 @@
 @media screen and (min-width: $width-break-point) {
-  .title {
-    text-align: center;
+  .post-body {
+    //padding-top: 3.2rem;
 
-    &-inner {
-      font-size: $size-regular + 1rem;
+    .title {
+      text-align: center;
+
+      &-inner {
+        font-size: $size-regular + 1rem;
+      }
+    }
+
+    .content {
+      padding-top: 3.2rem;
+
+      h1 {
+        font-size: $size-regular + .8rem;
+      }
+      h2 {
+        font-size: $size-regular + .6rem;
+      }
+      h3 {
+        font-size: $size-regular + .4rem;
+      }
+      h4 {
+        font-size: $size-regular + .2rem;
+      }
+      h5 {
+        font-size: $size-regular + .1rem;
+      }
+      h6 {
+        font-size: $size-regular;
+      }
     }
   }
 
-  .content {
-    h1 {
-      font-size: $size-regular + .8rem;
-    }
-    h2 {
-      font-size: $size-regular + .6rem;
-    }
-    h3 {
-      font-size: $size-regular + .4rem;
-    }
-    h4 {
-      font-size: $size-regular + .2rem;
-    }
-    h5 {
-      font-size: $size-regular + .1rem;
-    }
-    h6 {
-      font-size: $size-regular;
-    }
-  }
 }
 
 @media screen and (max-width: $width-break-point) {
-  .title {
-    text-align: left;
+  .post-body {
+    //padding-top: 2.4rem;
 
-    &-inner {
-      font-size: $size-regular + .8rem;
+    .title {
+      text-align: left;
+
+      &-inner {
+        font-size: $size-regular + .8rem;
+      }
     }
+
+    .content {
+      padding-top: 2.4rem;
+
+      h1 {
+        font-size: $size-regular + .6rem;
+      }
+      h2 {
+        font-size: $size-regular + .4rem;
+      }
+      h3 {
+        font-size: $size-regular + .3rem;
+      }
+      h4 {
+        font-size: $size-regular + .2rem;
+      }
+      h5 {
+        font-size: $size-regular + .1rem;
+      }
+      h6 {
+        font-size: $size-regular;
+      }
+    }
+
   }
-
-  .content {
-    h1 {
-      font-size: $size-regular + .6rem;
-    }
-    h2 {
-      font-size: $size-regular + .4rem;
-    }
-    h3 {
-      font-size: $size-regular + .3rem;
-    }
-    h4 {
-      font-size: $size-regular + .2rem;
-    }
-    h5 {
-      font-size: $size-regular + .1rem;
-    }
-    h6 {
-      font-size: $size-regular;
-    }
-  }
-
 }
 
 .post-body {
@@ -66,19 +79,22 @@
     padding-left: 3.2rem;
     li {
       list-style: disc;
-      line-height: 1.6;
+      //line-height: 1.6;
+      line-height: 2.2rem;
     }
   }
 
   .title {
+    &-inner {
+      font-weight: 400;
+    }
+
     &-meta {
       color: $meta;
     }
   }
 
   .content {
-    padding-top: 2.4rem;
-
     h2:before {
       content: '# ';
       color: $color-tomato-red;
@@ -102,21 +118,6 @@
     h6:before {
       content: '##### ';
       color: $color-tomato-red;
-    }
-  }
-
-  .categories {
-
-  }
-
-  .tags {
-    &-item {
-      color: $meta;
-      &:before {
-        content: '# ';
-        color: $color-tomato-red;
-      }
-
     }
   }
 
