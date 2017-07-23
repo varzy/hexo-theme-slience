@@ -1,5 +1,10 @@
 .page {
-  .content{
-    // font-size: $size-large;
+  ul, ol {
+    padding-left: 3.2rem;
+    li {
+      list-style: disc;
+      //line-height: 1.6;
+      line-height: 2.2rem;
+    }
   }
 }
