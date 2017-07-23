@@ -9,7 +9,7 @@ A silent theme for hexo.
 ## Installation
 
 ``` shell
-$ git clone https://github.com/hexojs/hexo-theme-slience.git themes/landscape
+$ git clone git@github.com:varzy/hexo-theme-slience.git themes/hexo-theme-slience
 
 $ npm i -D hexo-renderer-sass
 ```
