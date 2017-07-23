@@ -175,5 +175,12 @@ html {
       align-items: center;
     }
 
+    .menu-page-title{
+      margin-left: .8rem;
+      padding-left: 2rem;
+      border-left: 2px solid $color-tomato-red;
+      color: $meta;
+    }
+
   }
 }

@@ -6,19 +6,19 @@ menus:
   about: /about
 
 # chrome toolbar color for android chrome
-theme_color: f5f5f5
+theme_color: f9f9f9
 
 # site's favicon
 favicon: favicon.png
 
-# google site verification code's content
+# google site verification code's content. Please replace it by yourself code, or remove it
 google_site_verification: c66gcm0iMw487a2YC6w7cFbrhhe_Mh_vVNC6Pt3Dak8
 
 # is display post_toc
 post_toc: false
 
 # TODO
-is_show_categories: true
+is_show_categories: false
 
 # TODO
-is_show_tags: true
+is_show_tags: false

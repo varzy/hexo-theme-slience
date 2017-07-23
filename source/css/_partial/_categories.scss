@@ -1,14 +1,5 @@
 .categories {
-  // ! TODO: compare this part
-  .title {
-    padding-left: 2rem;
-    border-left: 2px solid $color-tomato-red;
-    color: $meta;
-  }
-
   a {
-    //word-break: break-all;
-    //white-space: nowrap;
     word-wrap: break-word;
     word-break: normal;
   }
@@ -21,7 +12,6 @@
       list-style: none;
       display: inline-block;
       min-width: 30%;
-
     }
   }
 

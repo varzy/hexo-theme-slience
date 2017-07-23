@@ -6,6 +6,8 @@
 
 @media screen and (max-width: $width-break-point) {
   .prev-next {
+    max-width: 90%;
+    margin:0 auto;
     padding-top: 4.2rem;
   }
 }
