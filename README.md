@@ -1,6 +1,6 @@
 # hexo-theme-slience
 
-A slience theme for hexo.
+A silent theme for hexo.
 
 ## Demo
 
