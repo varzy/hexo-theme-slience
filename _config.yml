@@ -11,6 +11,9 @@ theme_color: f9f9f9
 # site's favicon
 favicon: favicon.png
 
+# humans.txt
+humans: true
+
 # google site verification code's content. Please replace it by yourself code, or remove it
 google_site_verification: c66gcm0iMw487a2YC6w7cFbrhhe_Mh_vVNC6Pt3Dak8
 

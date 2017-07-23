@@ -60,6 +60,13 @@
     <% } %>
 
     <% /**
+     * add humans if the config exist
+     */ %>
+    <% if(theme.humans) { %>
+    <link rel="author" content="<%= config.root + "humans.txt" %>">
+    <% } %>
+
+    <% /**
      * include css
      */ %>
      <%- css('css/style.css') %>
