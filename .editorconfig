@@ -12,3 +12,7 @@ insert_final_newline = true
 [*.ejs]
 indent_size = 2
 tab_width = 2
+
+[*.scss]
+indent_size = 2
+tab_width = 2

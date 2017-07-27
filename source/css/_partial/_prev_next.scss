@@ -1,26 +1,28 @@
 @media screen and (min-width: $width-break-point) {
-  .prev-next {
-    padding-top: 5.6rem;
-  }
+    .prev-next {
+        padding-top: 5.6rem;
+    }
 }
 
 @media screen and (max-width: $width-break-point) {
-  .prev-next {
-    max-width: 90%;
-    margin:0 auto;
-    padding-top: 4.2rem;
-  }
+    .prev-next {
+        max-width: 90%;
+        margin: 0 auto;
+        padding-top: 4.2rem;
+    }
 }
 
 .prev-next {
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    font-size: $size-large;
-
-    a:link, a:visited {
-      color: $meta;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        font-size: $size-large;
+        a:link,
+        a:visited {
+            color: $meta;
+        }
+        a:hover {
+            color: $color-tomato-red;
+        }
     }
-  }
-
 }

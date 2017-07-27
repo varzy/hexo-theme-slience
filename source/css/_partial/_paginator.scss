@@ -1,32 +1,33 @@
 @media screen and (min-width: $width-break-point) {
-  .paginator {
-    a, span {
-      padding: 0 1.6rem;
+    .paginator {
+        a,
+        span {
+            padding: 0 1.6rem;
+        }
+        .wrapper {
+            text-align: center;
+        }
     }
-
-    .wrapper {
-      text-align: center;
-    }
-  }
 }
 
 @media screen and (max-width: $width-break-point) {
-  .paginator {
-    .wrapper {
-      max-width: $width-break-point / 3 * 2;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-around;
+    .paginator {
+        .wrapper {
+            max-width: $width-break-point / 3 * 2;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
     }
-  }
 }
 
 .paginator {
-  padding-top: 4rem;
-  //font-size: $size-large;
-
-  a:link, a:visited {
-    color: $meta;
-  }
-
+    padding-top: 4rem; //font-size: $size-large;
+    a:link,
+    a:visited {
+        color: $meta;
+    }
+    a:hover {
+        color: $color-tomato-red;
+    }
 }
