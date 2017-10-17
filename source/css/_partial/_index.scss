@@ -1,5 +1,10 @@
 @media screen and (min-width: $width-break-point) {
   .index {
+    max-width: 590px;
+    height: 532px;
+    position: absolute;
+    top: 50%;
+    margin-top: -284px !important;
     .posts {
       &-item {
         display: flex;
@@ -10,7 +15,6 @@
           text-align: center;
           font-size: $size-regular;
         }
-
         &-title {
           flex: 8;
           //font-size: $size-large;
@@ -22,7 +26,6 @@
 
 @media screen and (max-width: $width-break-point) {
   .index {
-
     .posts {
       &-item {
         &-meta {
