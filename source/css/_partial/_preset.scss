@@ -23,6 +23,7 @@ html {
     a {
       text-decoration: none;
       word-break: break-all;
+      outline: none;
 
       &:link, &:visited {
         //color: $color-black;
