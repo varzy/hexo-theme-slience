@@ -2,16 +2,12 @@
 
 A silent theme for hexo.
 
-## Demo
-
-[Woonden Bar](http://varzy.me/blog)
-
 ## Installation
 
-``` shell
-$ git clone git@github.com:varzy/hexo-theme-slience.git themes/hexo-theme-slience
+``` bash
+git clone git@github.com:varzy/hexo-theme-slience.git themes/hexo-theme-slience
 
-$ npm i -D hexo-renderer-sass
+npm i -D hexo-renderer-sass
 ```
 
 ## Enable
